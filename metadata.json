@@ -1,0 +1,6 @@
+{
+  "name": "Drift City",
+  "description": "Track physical objects being passed from stranger to stranger across New York City.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

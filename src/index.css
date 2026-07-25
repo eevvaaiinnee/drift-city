@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-display {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+  }
+}
+
+/* Custom Neo-Brutalist Leaflet Popup Styling */
+.custom-leaflet-popup .leaflet-popup-content-wrapper {
+  background: #FFFFFF !important;
+  border: 3px solid #000000 !important;
+  border-radius: 16px !important;
+  box-shadow: 4px 4px 0px 0px #000000 !important;
+  padding: 4px !important;
+}
+
+.custom-leaflet-popup .leaflet-popup-tip {
+  background: #000000 !important;
+}
+
+.custom-leaflet-popup .leaflet-popup-content {
+  margin: 8px 10px !important;
+}
+
+/* Printable Tag Styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .printable-tag, .printable-tag * {
+    visibility: visible;
+  }
+  .printable-tag {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border: 4px solid #000000 !important;
+    box-shadow: none !important;
+    background: white !important;
+    color: black !important;
+  }
+}
